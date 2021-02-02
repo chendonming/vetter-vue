@@ -1,0 +1,36 @@
+{
+	"name": "vetter-vue",
+	"displayName": "pureDefinitionVue",
+	"description": "vue pure Definition, Extracted from vue helper",
+	"version": "0.0.2",
+	"engines": {
+		"vscode": "^1.52.0"
+	},
+	"publisher": "chendm",
+	"icon": "command.png",
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onLanguage:vue"
+	],
+	"contributes": {
+	},
+	"main": "./extension.js",
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "yarn run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.0.4",
+		"@types/node": "^12.11.7",
+		"@types/vscode": "^1.52.0",
+		"eslint": "^7.19.0",
+		"glob": "^7.1.6",
+		"mocha": "^8.2.1",
+		"typescript": "^4.1.3",
+		"vscode-test": "^1.5.0"
+	}
+}
